@@ -22,15 +22,15 @@ function paintGreetings(username){
     greeting.classList.remove(HIDDEN_CLASSNAME);
 };
 
-const savedUsername = localStorage.getItem(USERNAME_KEY);
+const savedUsername = localStorage.getItem(USERNAME_KEY); // localStorage에 정보가 있다면 가져옴.
 
 if(savedUsername === null) {
-    //savedUsername 값아 없을 때 loginForm 을 보여줌.
+    //savedUsername 값아 없을 때 loginForm을 보여줌.
     loginForm.classList.remove(HIDDEN_CLASSNAME); //hidden class 제거
     loginForm.addEventListener("submit", onLoginSubmit);
 } else {
     //있으면 greeting 보여 줌.
-    paintGreetings(savedUsername);// 새로 저장한 username 을 가져옴.
+    paintGreetings(savedUsername);// 새로 저장한 username을 보여줌.
 };
 
 
