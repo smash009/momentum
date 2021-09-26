@@ -7,10 +7,14 @@ const loginButton = document.querySelector("#loginForm button");
 
 function onLoginSubmit(event) {
     event.preventDefault(); //submit 기본 동작인 refresh 방지.
-    console.log(loginInput.value)
+    const username = loginInput.value;
+    loginForm.classList.add("hidden");
+    console.log(username);
 };
 
-loginButton.addEventListener("submit", onLoginSubmit);
+loginForm.addEventListener("submit", onLoginSubmit);
+
+
 
 // function handleLoginBtnClick() {
 //     // console.log("Hello",loginInput.value)
