@@ -1,6 +1,6 @@
 const player = {
     name: "janghyun",
-    age: 84,
+    age: 40,
 };
 
 player.age = 41;
@@ -38,7 +38,7 @@ calculator.divide (1, 2)
 calculator.times (1, 2)
 calculator.power (1, 2)
 
-const age = 84;
+const age = 40;
 function calculateKrAge(ageOfForeigner) {
     return ageOfForeigner + 2;
 }
