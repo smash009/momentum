@@ -1,2 +1,14 @@
-body { background-color: beige; }
-.hidden { display: none; }
+/* body { background-color: beige; } */
+body {
+    background-image: url('https://source.unsplash.com/category/nature/1600x900');
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
