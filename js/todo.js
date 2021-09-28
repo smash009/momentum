@@ -13,12 +13,15 @@ function saveToDos() {
 function deleteToDo(event){
     const li = event.target.parentElement;
     li.remove();
+    toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id));
+    saveToDos();
 } 
 
 function paintToDo(newToDo){
     const li = document.createElement("li"); // li 생성
+    li.id = newToDo.id;
     const span = document.createElement("span"); // span 생성
-    span.innerText = newToDo; // 내용
+    span.innerText = newToDo.text; // 내용
     const button = document.createElement("button"); // button 생성
     button.innerText = "❌";
     button.addEventListener("click", deleteToDo);
@@ -28,20 +31,25 @@ function paintToDo(newToDo){
 }
 
 
-function handleToDoSumit(event) {
+function handleToDoSubmit(event) {
     event.preventDefault();
     const newToDo = toDoInput.value;
     toDoInput.value = "";
-    toDos.push(newToDo);
-    paintToDo(newToDo);
+    const newToDoObj = {
+        text: newToDo,
+        id: Date.now(),
+    };
+    toDos.push(newToDoObj);
+    paintToDo(newToDoObj);
     saveToDos();
 }
 
-toDoForm.addEventListener("submit", handleToDoSumit);
+toDoForm.addEventListener("submit", handleToDoSubmit);
 
 const savedToDos = localStorage.getItem(TODOS_KEY);
-if (saveToDos !== null){
+
+if (savedToDos !== null){
     const parsedToDos = JSON.parse(savedToDos);
     toDos = parsedToDos;
     parsedToDos.forEach(paintToDo);
-} 
+}
