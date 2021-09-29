@@ -39,6 +39,6 @@ h1#greeting { margin: 10px auto; font-size: 21px; color: #fff; text-shadow: 3px 
 #weather span { }
 
 #quote { width: 100%; margin: 20px 0; }
-#quote span { color: #fff; display: block; text-align: center; }
+#quote span { color: #fff; display: block; text-align: center; text-shadow: 1px 1px 5px #333; }
 #quote span:first-child { padding: 10px 0 0px; line-height: 41px; font-size: 21px; }
 #quote span:last-child { padding: 0px 0 10px; line-height: 31px; font-size: 17px; }
