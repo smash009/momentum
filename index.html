@@ -9,28 +9,40 @@
     <title>Momentum</title>
 </head>
 <body>
+
     <!-- <h1 autofocus class="" id="hello">Welcome!</h1> -->
-    <form class="hidden" id="loginForm">
-        <input type="text" maxlength="15" required placeholder="What is your name?">
-        <button>log In</button>
-    </form>
+    <section class="section" id="topSection">
+        <h1 class="hidden" id="greeting"></h1>
+
+        <div id="weather">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </section>
+    <h2 id="day"></h2>
     <h2 id="clock">00:00</h2>
+
+    <form class="hidden" id="loginForm">
+        <input type="text" required placeholder="What is your name?">
+        <!-- <button>log In</button> -->
+    </form>
+
     <form class="" id="toDoForm">
         <input type="text" placeholder="Write a to do and Press enter. ">
     </form>
+
     <ul class="" id="toDoList">
     </ul>
-    <h1 class="hidden" id="greeting"></h1>
+
     <div id="quote">
         <span></span>
         <span></span>
     </div>
-    <div id="weather">
-        <span></span>
-        <span></span>
-    </div>
+
     <script src="js/greetings.js"></script>
     <script src="js/clock.js"></script>
+    <script src="js/day.js"></script>
     <script src="js/quotes.js"></script>
     <!-- <script src="js/background.js"></script> -->
     <script src="js/todo.js"></script>

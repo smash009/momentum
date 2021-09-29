@@ -25,8 +25,8 @@ function paintToDo(newToDo){
     const button = document.createElement("button"); // button 생성
     button.innerText = "❌";
     button.addEventListener("click", deleteToDo);
-    li.appendChild(span); // li 안에 span 위치
     li.appendChild(button); // li 안에 button 위치
+    li.appendChild(span); // li 안에 span 위치
     toDoList.appendChild(li); // list 안에 li 위치
 }
 
