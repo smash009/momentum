@@ -25,7 +25,7 @@ p { margin: 15px 0; }
 #day { font-size: 41px; color: #fff; text-shadow: 3px 3px 10px #333; }
 #clock { width: 380px; margin: 0 auto; font-size: 101px; color: #fff; text-shadow: 3px 3px 10px #333; }
 #loginForm, #toDoForm { width: 300px; height: 41px; margin: 5px 0; padding: 5px 0; }
-#loginForm input::placeholder, #toDoForm input::placeholder { font-size: 17px; color: #fff; text-align: center; }
+#loginForm input::placeholder, #toDoForm input::placeholder { font-size: 17px; color: #fff; text-shadow: 1px 1px 3px #333; text-align: center; }
 #loginForm input, #toDoForm input { width: 300px; height: 41px; padding: 0 6px; font-size: 31px; line-height: 41px; color: #fff; background: rgba(255, 255, 255, 0.2); border: 0; border-bottom: 2px solid #fff; border-radius: 3px; box-shadow: 0px 1px 10px 0px #777; outline: none; }
 
 #toDoList { }
@@ -34,7 +34,7 @@ p { margin: 15px 0; }
 #toDoList li button { background: none; border: none; margin-left: 10px; }
 
 #topSection { width: 100%; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; }
-h1#greeting { margin: 10px auto; font-size: 41px; color: #fff; text-shadow: 3px 3px 10px #333; }
+h1#greeting { margin: 10px auto; font-size: 21px; color: #fff; text-shadow: 3px 3px 10px #333; }
 #weather { width: 160px; margin: 20px auto; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-around; font-size: 21px; font-style: italic; color: #fff; text-shadow: 3px 3px 10px #333; }
 #weather span { }
 
