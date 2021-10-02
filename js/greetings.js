@@ -25,7 +25,7 @@ function paintGreetings(username){
 const savedUsername = localStorage.getItem(USERNAME_KEY); // localStorage에 정보가 있다면 가져옴.
 
 if(savedUsername === null) {
-    //savedUsername 값아 없을 때 loginForm을 보여줌.
+    //savedUsername 값이 없을 때 loginForm을 보여줌.
     loginForm.classList.remove(HIDDEN_CLASSNAME); //hidden class 제거
     loginForm.addEventListener("submit", onLoginSubmit);
 } else {
