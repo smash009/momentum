@@ -1,5 +1,5 @@
 const aaa = document.querySelector("h2#clock > span");
-const colors = ["#ff0000", "#ff5e00", "#ffbb00", "#ffe400", "#abf200", "#1ddb16", "#00d8ff", "#0054ff", "#0100ff", "#5f00ff", "#ff00dd", "#ff007f"];
+const colors = ["#fff", "#ff0000", "#ff5e00", "#ffbb00", "#ffe400", "#abf200", "#1ddb16", "#00d8ff", "#0054ff", "#0100ff", "#5f00ff", "#ff00dd", "#ff007f"];
 
 function colorControl() {
     const randomColor1 = colors[Math.floor(Math.random() * colors.length)];
