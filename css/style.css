@@ -55,3 +55,7 @@ h1#greeting::after { content: '❤'; position: relative; left: 6px; top: 1px; fl
         transform: scale(1.0);
     }
 }
+
+@media(max-width: 767px){
+    #clock { width: 320px; }
+}
