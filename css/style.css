@@ -15,12 +15,18 @@ body {
 
 h1, h2, h3, h4, p { margin: 15px 0; }
 
-#day { font-size: 41px; color: #fff; text-shadow: 3px 3px 10px #333; }
+#day { font-size: 41px; font-weight: 400; color: #fff; text-shadow: 3px 3px 10px #333; }
 /* #clock { width: 380px; margin: 0 auto; font-size: 101px; color: #fff; text-shadow: 3px 3px 10px #333; } */
-#clock { width: 380px; margin: 0 auto; font-size: 101px; color: #fff; }
+#clock { min-width: 320px; margin: 0 auto; font-size: 101px; color: #fff; }
+#clock span { display: inline-block; text-shadow: 3px 3px 10px #555; }
+#clock #sec {  font-size: 51px; position: relative; top: 0; right: -10px; }
+
 #loginForm, #toDoForm { width: 300px; height: 41px; margin: 5px 0; padding: 5px 0; }
-#loginForm input::placeholder, #toDoForm input::placeholder { font-size: 17px; color: #fff; text-shadow: 1px 1px 3px #333; text-align: center; }
-#loginForm input, #toDoForm input { width: 300px; height: 41px; padding: 0 6px; font-size: 31px; line-height: 41px; color: #fff; background: rgba(255, 255, 255, 0.2); border: 0; border-bottom: 2px solid #fff; border-radius: 3px; box-shadow: 0px 1px 10px 0px #777; outline: none; text-align: center; }
+#loginForm input::placeholder, #toDoForm input::placeholder { font-size: 17px; color: #fff; text-shadow: 1px 1px 3px #333; text-align: center; transition-duration: 0.5s; }
+#loginForm input:focus::placeholder, #toDoForm input:focus::placeholder { color: transparent; text-shadow: none; transition-duration: 0.5s; }
+#loginForm input, #toDoForm input { width: 300px; height: 41px; padding: 0 6px; font-size: 31px; line-height: 41px; color: #fff; background: rgba(249, 249, 249, 0.42); border: 0; border-bottom: 2px solid #fff; border-radius: 3px; box-shadow: 0px 1px 10px 0px #777; outline: none; text-align: center; transition-duration: 0.5s; }
+#loginForm input:hover, #toDoForm input:hover { background: #414141; border-bottom: 2px solid #222; box-shadow: 0px 1px 10px 0px #333; transition-duration: 0.5s; }
+#loginForm input:focus, #toDoForm input:focus { background: #414141; border-bottom: 2px solid #222; box-shadow: 0px 1px 10px 0px #333; }
 
 #toDoList li { margin: 2px 0; padding: 3px 0; background: none; transition-delay: 5s; }
 #toDoList li span { font-size: 25px; color: #fff; text-shadow: 1px 1px 5px #333; }
