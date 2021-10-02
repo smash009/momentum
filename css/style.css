@@ -17,7 +17,7 @@ h1, h2, h3, h4, p { margin: 15px 0; }
 
 #day { font-size: 41px; font-weight: 400; color: #fff; text-shadow: 3px 3px 10px #333; }
 /* #clock { width: 380px; margin: 0 auto; font-size: 101px; color: #fff; text-shadow: 3px 3px 10px #333; } */
-#clock { min-width: 340px; margin: 0 auto; font-size: 101px; color: #fff; }
+#clock { width: 340px; margin: 0 auto; font-size: 101px; color: #fff; }
 #clock span { display: inline-block; text-shadow: 3px 3px 10px #555; }
 #clock #sec {  font-size: 51px; position: relative; top: 0; right: -10px; }
 
