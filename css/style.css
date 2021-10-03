@@ -21,10 +21,10 @@ h1, h2, h3, h4, p { margin: 15px 0; }
 #clock span { display: inline-block; text-shadow: 3px 3px 10px #555; }
 #clock #sec {  font-size: 51px; position: relative; top: 0; right: -10px; }
 
-#loginForm, #toDoForm { width: 300px; height: 41px; margin: 5px 0; padding: 5px 0; }
+#loginForm, #toDoForm { height: 41px; margin: 5px 0; padding: 5px 0; }
+#loginForm input, #toDoForm input { width: 300px; height: 41px; padding: 0 6px; font-size: 31px; line-height: 41px; color: #fff; background: rgba(249, 249, 249, 0.42); border: 0; border-bottom: 2px solid #fff; border-radius: 3px; box-shadow: 0px 1px 10px 0px #777; outline: none; text-align: center; transition-duration: 0.5s; }
 #loginForm input::placeholder, #toDoForm input::placeholder { font-size: 17px; color: #fff; text-shadow: 1px 1px 3px #333; text-align: center; transition-duration: 0.5s; }
 #loginForm input:focus::placeholder, #toDoForm input:focus::placeholder { color: transparent; text-shadow: none; transition-duration: 0.5s; }
-#loginForm input, #toDoForm input { width: 300px; height: 41px; padding: 0 6px; font-size: 31px; line-height: 41px; color: #fff; background: rgba(249, 249, 249, 0.42); border: 0; border-bottom: 2px solid #fff; border-radius: 3px; box-shadow: 0px 1px 10px 0px #777; outline: none; text-align: center; transition-duration: 0.5s; }
 #loginForm input:hover, #toDoForm input:hover { background: #414141; border-bottom: 2px solid #222; box-shadow: 0px 1px 10px 0px #333; transition-duration: 0.5s; }
 #loginForm input:focus, #toDoForm input:focus { background: #414141; border-bottom: 2px solid #222; box-shadow: 0px 1px 10px 0px #333; }
 

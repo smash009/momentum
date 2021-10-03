@@ -45,6 +45,7 @@ function handleToDoSubmit(event) {
 }
 
 toDoForm.addEventListener("submit", handleToDoSubmit);
+toDoInput.addEventListener("click", focus());
 
 const savedToDos = localStorage.getItem(TODOS_KEY);
 
@@ -53,3 +54,4 @@ if (savedToDos !== null){
     toDos = parsedToDos;
     parsedToDos.forEach(paintToDo);
 }
+
